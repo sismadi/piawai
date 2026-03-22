@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Piawai — Empat aplikasi untuk institusi pendidikan dan UMKM Indonesia: LMS, Presensi, Transaksi, Keuangan.">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="Cache-Control" content="max-age=1209600">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Piawai">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="https://donat.id/pwa/icons/icon-152x152.png">
+
+<meta name="msapplication-TileImage" content="pwa/icons/icon-144x144.png">
+<meta name="msapplication-TileColor" content="#164391">
+<meta name="theme-color" content="#164391">
+
+<meta property="og:title" content="Piawai — Aplikasi untuk Institusi dan UMKM Indonesia"/>
+<meta property="og:description" content="LMS, Presensi, Transaksi, dan Keuangan dalam satu ekosistem yang terhubung."/>
+<meta property="og:image" content="https://piawai.id/assets/og-piawai.png"/>
+<meta property="og:url" content="https://piawai.id"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="627"/>
+<meta property="og:type" content="website"/>
+
+<title>Piawai — Aplikasi untuk Institusi dan UMKM</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M 6 17 L 2 17 L 2 12 C 2 -2 22 -2 22 12 C 22 20 14 22 12 22 L 7 22 L 7 12 C 7 5 17 5 17 12 C 17 15 14 17 12 17 L 11 17 L 11 14 L 12 14 C 13 14 14 13 14 12 C 14 9 10 9 10 12 L 10 19 L 12 19 C 14 19 19 17 19 12 C 19 2 5 2 5 12 L 5 14 L 6 14 Z'/></svg>" type="image/svg+xml">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Piawai",
+  "url": "https://piawai.id",
+  "description": "Ekosistem empat aplikasi web untuk institusi pendidikan dan UMKM Indonesia: LMS, Presensi, Transaksi, Keuangan.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Jakarta", "addressCountry": "ID" },
+  "contactPoint": { "@type": "ContactPoint", "telephone": "+62-878-8507-3237", "contactType": "customer service" }
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://donat.id/svg/svg.css">
+<link rel="stylesheet" type="text/css" href="https://donat.id/core/donat.css">
+<link rel="stylesheet" type="text/css" href="https://donat.id/kit/login.css">
+<link rel="stylesheet" type="text/css" href="https://donat.id/skin/skin.css">
+
+<style>
+:root {
+     --pColor:#00afb9;
+     --pLightColor:#ade8f4;
+     --pDarkColor:#0077b6;
+     --border :#ECECF3;
+  --pTextColor:   #000000;
+  --pButtonColor: #ffffff;
+  --pPage:        #f2f2f2;
+  --gInput:       #ffffff;
+
+  /* SVG logo — akan di-override theme.js */
+  --svgLogo: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a3d5ff33' d='M 6 17 L 2 17 L 2 12 C 2 -2 22 -2 22 12 C 22 20 14 22 12 22 L 7 22 L 7 12 C 7 5 17 5 17 12 C 17 15 14 17 12 17 L 11 17 L 11 14 L 12 14 C 13 14 14 13 14 12 C 14 9 10 9 10 12 L 10 19 L 12 19 C 14 19 19 17 19 12 C 19 2 5 2 5 12 L 5 14 L 6 14 Z'/></svg>");
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div id="pattern-layer" class=""></div>
+<div id="modal" class="hide depan"></div>
+<div id="bawah" class="toast hide">info</div>
+
+<div id="menu" class="menu" tabindex="0">
+  <div class="sidebar-header">
+    <div class="logo">
+      <img data-src="piawai/80">
+    </div>
+    <span>Piawai</span>
+  </div>
+
+  <ul id="leftmenu">
+    <li data-info="web/page/home">
+      <img data-src="house"> Beranda
+    </li>
+    <li data-info="web/page/profile" class="item">
+      <img data-src="piawai"> Profil
+    </li>
+    <li data-info="web/page/kontak">
+      <img data-src="whatsapp"> Kontak
+    </li>
+  </ul>
+
+  <div class="sidebar-footer">
+    © 2026 Piawai<br>
+    UMKM
+  </div>
+</div>
+
+<div id="panel-container"></div>
+<div id="main" class="main shadow">
+  <div id="header" class="header"></div>
+  <div id="topmenu" class="topmenu sticky-top">topmenu</div>
+
+  <main>
+    <div id="content" class="content"></div>
+
+    <section id="seo-shell" aria-hidden="true" style="position:absolute;visibility:hidden;width:1px;height:1px;overflow:hidden;">
+
+      <h1>Piawai — Aplikasi untuk Institusi dan UMKM Indonesia</h1>
+      <p>Empat aplikasi. Dua segmen. Satu ekosistem yang bekerja. Untuk kampus yang ingin kuliah online dan absensi digital. Untuk usaha yang ingin kasir, stok, dan pembukuan terhubung.</p>
+
+      <nav>
+        <h2>Navigasi</h2>
+        <ul>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="/profile">Tentang Piawai</a></li>
+          <li><a href="/kontak">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h2>Produk Piawai</h2>
+
+        <article>
+          <h3>LMS — Platform Pembelajaran Online</h3>
+          <p>Platform belajar online untuk kampus dan lembaga pendidikan. Kelola kursus, kuis, jadwal, daftar peserta, nilai, dan sertifikat digital dalam satu tempat.</p>
+          <a href="/lms">Lihat Piawai LMS</a>
+        </article>
+
+        <article>
+          <h3>Presensi — Absensi Digital</h3>
+          <p>Absensi digital via QR Code atau tautan, tanpa install aplikasi. Rekap otomatis per sesi dan periode untuk kelas, rapat, pelatihan, dan kegiatan organisasi.</p>
+          <a href="/presensi">Lihat Piawai Presensi</a>
+        </article>
+
+        <article>
+          <h3>Transaksi — Kasir Digital dan Manajemen Stok</h3>
+          <p>Kasir digital dan manajemen stok dalam satu produk. UMKM kecil pakai keduanya sekaligus. Kampus dan koperasi bisa pisahkan peran kasir dan admin gudang.</p>
+          <a href="/transaksi">Lihat Piawai Transaksi</a>
+        </article>
+
+        <article>
+          <h3>Keuangan — Pembukuan dan Laporan Keuangan</h3>
+          <p>Pembukuan lengkap untuk usaha dan institusi. Catat pemasukan dan pengeluaran, lihat neraca dan laporan laba rugi. Laporan keuangan siap kapan saja.</p>
+          <a href="/keuangan">Lihat Piawai Keuangan</a>
+        </article>
+      </section>
+
+      <section>
+        <h2>Kontak</h2>
+        <p>Piawai — Jakarta, Indonesia</p>
+        <p>WhatsApp: +62 878 8507 3237</p>
+        <p>Email: wawan@sismadi.com</p>
+        <a href="https://wa.me/6287885073237">Hubungi via WhatsApp</a>
+      </section>
+
+    </section>
+  </main>
+
+  <div id="footer" class="footer">
+    <div id="footer-artikel" class="row">
+
+      <div class="col-1-3">
+        <div class="artikel">
+          <img data-src="piawai/50">
+          <br>
+          <strong>Piawai</strong><br>
+          +62 878 8507 3237<br>
+          wawan@sismadi.com<br>
+          Jakarta, Indonesia<br>
+          <br>
+          <img data-src="geo/32">
+          <img data-src="linkedin/32/navy">
+          <img data-src="github/32/black">
+          <img data-src="whatsapp/32/green">
+        </div>
+      </div>
+
+      <div class="col-1-3">
+        <div class="artikel">
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a onclick="navigate('web/page/home')">Beranda</a></li>
+            <li><a onclick="navigate('web/page/profile')">Tentang Piawai</a></li>
+            <li><a onclick="navigate('web/page/kontak')">Hubungi Kami</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-1-3">
+        <div class="artikel">
+          <h3>Produk</h3>
+          <ul>
+            <li>LMS — Pembelajaran Online</li>
+            <li>Presensi — Absensi Digital</li>
+            <li>Transaksi — Kasir dan Stok</li>
+            <li>Keuangan — Pembukuan</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    Made with <img data-src="piawai/32x32" alt="Piawai"> by piawai.id
+  </div>
+</div>
+
+<script type="text/javascript" src="https://donat.id/skin/skin.js"></script>
+<script type="text/javascript" src="https://donat.id/core/donat.js"></script>
+<script type="text/javascript" src="https://donat.id/ui/ui.js"></script>
+<script type="text/javascript" src="https://donat.id/ui/ui-code-patch.js"></script>
+<script type="text/javascript" src="https://donat.id/svg/svg.js"></script>
+<script type="text/javascript" src="https://donat.id/kit/login.js"></script>
+<script type="text/javascript" src="https://donat.id/kit/web.js"></script>
+
+<script type="text/javascript">
+config = {
+  api: 0,
+  db: 'web',
+  getdata: function(id) {
+    return config.api ? `http://localhost/api/?${id}` : `data/${id}.json`;
+  },
+  apps: [
+    { icon: "edu",    name: "LMS",        url: "lms/web/page/home"    },
+    { icon: "qrcode", name: "Presensi",   url: "presensi/page/home"   },
+    { icon: "cart",   name: "Transaksi",  url: "transaksi/page/home"  },
+    { icon: "wallet", name: "Keuangan",   url: "keuangan/page/home"   },
+  ],
+}
+
+const leftMenu = d.gebi('leftmenu');
+if (leftMenu) {
+  leftMenu.addEventListener('click', (event) => {
+    const li = event.target.closest('li');
+    if (li && leftMenu.contains(li)) {
+      navigate(li.getAttribute('data-info'));
+    }
+  });
+}
+</script>
+
+<script>
+  // Theme.set('piawai', 'biru', 'framework');
+</script>
+
+<script>
+  loadSVGLibraries(['https://donat.id/svg/svg.json']);
+</script>
+
+</body>
+</html>

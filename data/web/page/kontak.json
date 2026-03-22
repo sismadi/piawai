@@ -1,0 +1,118 @@
+{
+  "page": "web/page/kontak",
+  "data": [
+
+    {
+      "section": "header",
+      "content": {
+        "nama": "Hubungi Kami",
+        "tagline": "Pertanyaan, diskusi, atau ingin demo — kami siap.",
+        "deskripsi": "Tidak ada formulir panjang. Tidak ada antrian tiket.\nHubungi langsung via WhatsApp atau email.\nKami biasanya merespons dalam beberapa jam.",
+        "icon":  "whatsapp/150/var(--pColor)-var(--pLightColor)/1/float",
+        "icon1": "envelope/100/var(--pColor)/0.07",
+        "icon2": "geo/80/var(--pColor)/0.05",
+        "icon3": "piawai/60/var(--pColor)/0.04",
+        "cta": [
+          { "text": "WhatsApp Sekarang", "url": "https://wa.me/6287885073237?text=Halo%20Piawai%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda.", "icon": "whatsapp" },
+          { "text": "Kirim Email",       "url": "mailto:wawan@sismadi.com",  "icon": "envelope" },
+          { "text": "Beranda",           "url": "web/page/home",             "icon": "house"    }
+        ]
+      }
+    },
+
+    {
+      "section": "stats",
+      "caption": "Cara Menghubungi Kami",
+      "content": [
+        {
+          "id": 1,
+          "nama": "WhatsApp",
+          "isi": "+62 878 8507 3237\n\nCara tercepat mendapat respons.\nKirim pesan kapan saja —\naktif Senin–Sabtu, 08.00–17.00 WIB.",
+          "icon": "whatsapp/150/green",
+          "url": "https://wa.me/6287885073237?text=Halo%20Piawai%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda."
+        },
+        {
+          "id": 2,
+          "nama": "Email",
+          "isi": "wawan@sismadi.com\n\nUntuk pertanyaan teknis,\npermintaan demo, atau diskusi\nkerja sama dan kemitraan.",
+          "icon": "envelope/150/var(--pColor)",
+          "url": "mailto:wawan@sismadi.com"
+        },
+        {
+          "id": 3,
+          "nama": "Lokasi",
+          "isi": "Jakarta, Indonesia\n\nMelayani seluruh Indonesia secara remote.\nKunjungan langsung bisa diatur\natas permintaan.",
+          "icon": "geo/150/var(--pColor)",
+          "url": ""
+        }
+      ]
+    },
+
+    {
+      "section": "stats",
+      "caption": "Topik yang Sering Ditanyakan",
+      "content": [
+        {
+          "id": 1,
+          "nama": "Demo LMS atau Presensi",
+          "isi": "Ingin melihat platform belajar online\natau absensi digital Piawai bekerja langsung?\nSesi demo gratis, sesuai jadwal Anda.",
+          "icon": "edu/100/var(--pColor)",
+          "url": "https://wa.me/6287885073237?text=Halo%2C%20saya%20ingin%20demo%20LMS%20atau%20Presensi%20Piawai."
+        },
+        {
+          "id": 2,
+          "nama": "Demo Transaksi atau Keuangan",
+          "isi": "Ingin melihat kasir digital, manajemen stok,\natau pembukuan Piawai bekerja langsung?\nDemo gratis, langsung ke kebutuhan usaha Anda.",
+          "icon": "cart/100/var(--pColor)",
+          "url": "https://wa.me/6287885073237?text=Halo%2C%20saya%20ingin%20demo%20Transaksi%20atau%20Keuangan%20Piawai."
+        },
+        {
+          "id": 3,
+          "nama": "Harga dan paket",
+          "isi": "Tidak ada daftar harga kaku.\nSetiap institusi berbeda kebutuhannya.\nHubungi kami untuk diskusi\nharga yang sesuai skala Anda.",
+          "icon": "wallet/100/var(--pColor)",
+          "url": "https://wa.me/6287885073237?text=Halo%2C%20saya%20ingin%20tanya%20harga%20produk%20Piawai."
+        },
+        {
+          "id": 4,
+          "nama": "Kustomisasi dan kerja sama",
+          "isi": "Butuh fitur tambahan, tampilan khusus,\natau peluang kemitraan?\nTerbuka untuk diskusi\nkustomisasi dan pengembangan bersama.",
+          "icon": "setting/100/var(--pColor)",
+          "url": "https://wa.me/6287885073237?text=Halo%2C%20saya%20ingin%20diskusi%20kustomisasi%20atau%20kerja%20sama%20dengan%20Piawai."
+        }
+      ]
+    },
+
+    {
+      "section": "table",
+      "caption": "Jam Layanan",
+      "content": [
+        {
+          "Saluran":            "WhatsApp",
+          "Jam aktif":          "Senin – Sabtu, 08.00 – 17.00 WIB",
+          "Estimasi respons":   "1–3 jam"
+        },
+        {
+          "Saluran":            "Email",
+          "Jam aktif":          "Setiap hari",
+          "Estimasi respons":   "1 hari kerja"
+        },
+        {
+          "Saluran":            "Demo langsung",
+          "Jam aktif":          "Sesuai perjanjian",
+          "Estimasi respons":   "Jadwal via WhatsApp atau email"
+        }
+      ]
+    },
+
+    {
+      "section": "btn",
+      "btn": [
+        { "text": "WhatsApp Sekarang", "url": "https://wa.me/6287885073237", "icon": "whatsapp" },
+        { "text": "Lihat Produk",      "url": "web/page/docs",               "icon": "layout"   },
+        { "text": "Beranda",           "url": "web/page/home",               "icon": "house"    }
+      ]
+    }
+
+  ]
+}

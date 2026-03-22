@@ -1,0 +1,173 @@
+{
+  "page": "web/page/profile",
+  "data": [
+
+    {
+      "section": "header",
+      "content": {
+        "nama": "Tentang Piawai",
+        "tagline": "Dibangun oleh praktisi, untuk praktisi.",
+        "deskripsi": "Piawai lahir dari satu pertanyaan sederhana:\nmengapa software untuk institusi kecil\nselalu terlalu mahal, terlalu rumit, atau tidak terhubung?\n\nJawabannya adalah empat produk yang sempit, dalam, dan saling bekerja.",
+        "icon":  "piawai/150/var(--pColor)-var(--pLightColor)/1/float",
+        "icon1": "idea/100/var(--pColor)/0.07",
+        "icon2": "check/80/var(--pColor)/0.05",
+        "icon3": "user/60/var(--pColor)/0.04",
+        "cta": [
+          { "text": "Lihat Produk",  "url": "web/page/docs",   "icon": "layout"   },
+          { "text": "Hubungi Kami",  "url": "web/page/kontak", "icon": "whatsapp" },
+          { "text": "Beranda",       "url": "web/page/home",   "icon": "house"    }
+        ]
+      }
+    },
+
+    {
+      "section": "stats",
+      "caption": "Filosofi Produk",
+      "content": [
+        {
+          "id": 1,
+          "nama": "Sempit dan dalam, bukan lebar dan dangkal",
+          "isi": "Empat produk dengan fungsi yang jelas.\nLMS untuk belajar. Presensi untuk hadir.\nTransaksi untuk jual dan stok.\nKeuangan untuk pembukuan.\nMasing-masing satu tugas, dikerjakan dengan baik.",
+          "icon": "check/150/var(--pColor)",
+          "url": ""
+        },
+        {
+          "id": 2,
+          "nama": "Terhubung, bukan terisolasi",
+          "isi": "Presensi tahu jadwal LMS.\nTransaksi penjualan masuk ke Keuangan.\nData tidak diinput dua kali.\nSatu ekosistem yang bergerak bersama.",
+          "icon": "link/150/var(--pColor)",
+          "url": ""
+        },
+        {
+          "id": 3,
+          "nama": "Untuk tim kecil, bukan korporat",
+          "isi": "Satu admin bisa kelola semua.\nTidak perlu IT department.\nTidak perlu pelatihan berhari-hari.\nBuka browser, masuk, pakai hari ini.",
+          "icon": "user/150/var(--pColor)",
+          "url": ""
+        },
+        {
+          "id": 4,
+          "nama": "Data milik Anda",
+          "isi": "Semua data bisa diekspor kapan saja.\nTidak ada lock-in vendor.\nTidak ada biaya tambahan untuk akses data sendiri.\nData Anda, kendali Anda.",
+          "icon": "database/150/var(--pColor)",
+          "url": ""
+        }
+      ]
+    },
+
+    {
+      "section": "stats",
+      "caption": "Tim di Balik Piawai",
+      "content": [
+        {
+          "id": 1,
+          "nama": "Wawan Sismadi",
+          "isi": "Pendiri dan pengembang utama.\nDosen, praktisi web, dan arsitek\nekosistem Piawai.\nJakarta, Indonesia.",
+          "icon": "sismadi/150/var(--pColor)",
+          "url": "https://wawan.sismadi.com"
+        },
+        {
+          "id": 2,
+          "nama": "Piawai Web Templates",
+          "isi": "Unit pengembangan dan pemeliharaan\nseluruh produk dalam ekosistem Piawai.\nBertanggung jawab atas\npembaruan dan dukungan teknis.",
+          "icon": "piawai/150/var(--pColor)",
+          "url": ""
+        },
+        {
+          "id": 3,
+          "nama": "Kerja sama",
+          "isi": "Terbuka untuk mitra institusi,\npengembang, dan reseller.\nHubungi kami untuk diskusi\npeluang kolaborasi.",
+          "icon": "user/150/var(--pColor)",
+          "url": "web/page/kontak"
+        }
+      ]
+    },
+
+    {
+      "section": "table",
+      "caption": "Ekosistem Piawai — Gambaran Lengkap",
+      "content": [
+        {
+          "URL":     "piawai.id",
+          "Produk":  "Portal",
+          "Fungsi":  "Pintu masuk ekosistem — beranda, profil, kontak"
+        },
+        {
+          "URL":     "piawai.id/lms",
+          "Produk":  "LMS",
+          "Fungsi":  "Kursus, kuis, nilai, sertifikat, jadwal, daftar peserta"
+        },
+        {
+          "URL":     "piawai.id/presensi",
+          "Produk":  "Presensi",
+          "Fungsi":  "Absensi digital via QR Code, rekap, laporan kehadiran"
+        },
+        {
+          "URL":     "piawai.id/transaksi",
+          "Produk":  "Transaksi",
+          "Fungsi":  "Kasir digital, manajemen stok, laporan penjualan"
+        },
+        {
+          "URL":     "piawai.id/keuangan",
+          "Produk":  "Keuangan",
+          "Fungsi":  "Pembukuan, neraca, laba rugi, laporan keuangan"
+        },
+        {
+          "URL":     "wafel.id",
+          "Produk":  "Template Web",
+          "Fungsi":  "Starter kit dan desain siap pakai — portal terpisah"
+        },
+        {
+          "URL":     "donat.id",
+          "Produk":  "DonatJS",
+          "Fungsi":  "Framework dan dokumentasi developer — portal terpisah"
+        }
+      ]
+    },
+
+    {
+      "section": "stats",
+      "caption": "Rekognisi",
+      "content": [
+        {
+          "id": 1,
+          "nama": "ORCID",
+          "isi": "Peneliti terverifikasi dalam\njaringan akademik global.\nPublikasi ilmiah terdaftar resmi.",
+          "icon": "edu/100/var(--pColor)",
+          "url": "https://orcid.org"
+        },
+        {
+          "id": 2,
+          "nama": "Sinta",
+          "isi": "Sistem Informasi Riset Nasional.\nRekam jejak penelitian dan\npublikasi ilmiah Indonesia.",
+          "icon": "database/100/var(--pColor)",
+          "url": "https://sinta.kemdikbud.go.id"
+        },
+        {
+          "id": 3,
+          "nama": "Credly",
+          "isi": "Sertifikasi profesional\nyang terverifikasi digital.\nBadge kompetensi teknologi.",
+          "icon": "check/100/var(--pColor)",
+          "url": "https://credly.com"
+        },
+        {
+          "id": 4,
+          "nama": "GitHub",
+          "isi": "Kontribusi open source\ndan portofolio kode publik.\nRepository ekosistem Piawai.",
+          "icon": "github/100/var(--pColor)",
+          "url": "https://github.com"
+        }
+      ]
+    },
+
+    {
+      "section": "btn",
+      "btn": [
+        { "text": "Lihat Produk",  "url": "web/page/docs",   "icon": "layout"   },
+        { "text": "Hubungi Kami",  "url": "web/page/kontak", "icon": "whatsapp" },
+        { "text": "Beranda",       "url": "web/page/home",   "icon": "house"    }
+      ]
+    }
+
+  ]
+}

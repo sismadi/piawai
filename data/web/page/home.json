@@ -1,0 +1,154 @@
+{
+  "page": "web/page/home",
+  "data": [
+
+    {
+      "section": "header",
+      "content": {
+        "nama": "Piawai",
+        "tagline": "Empat aplikasi. Dua segmen. Satu ekosistem yang bekerja.",
+        "deskripsi": "Untuk kampus yang ingin kuliah online dan absensi digital.\nUntuk usaha yang ingin kasir, stok, dan pembukuan terhubung.\nPiawai dirancang sempit dan dalam —\nbukan banyak fitur, tapi fitur yang benar-benar dipakai.",
+        "icon":  "piawai/150/var(--pColor)-var(--pLightColor)/1/float",
+        "icon1": "edu/120/var(--pColor)/0.07",
+        "icon2": "cart/100/var(--pColor)/0.05",
+        "icon3": "qrcode/80/var(--pColor)/0.04",
+        "cta": [
+          { "text": "Lihat Produk",   "url": "web/page/docs",    "icon": "layout"   },
+          { "text": "Hubungi Kami",   "url": "web/page/kontak",  "icon": "whatsapp" },
+          { "text": "Tentang Piawai", "url": "web/page/profile", "icon": "piawai"   }
+        ]
+      }
+    },
+
+    {
+      "section": "stats",
+      "caption": "Empat Produk — Pilih yang Sesuai Kebutuhan Anda",
+      "content": [
+        {
+          "id": 1,
+          "nama": "LMS",
+          "isi": "Platform pembelajaran online lengkap.\nKursus, kuis, jadwal, daftar peserta,\nnilai, dan sertifikat digital.\nSatu tempat untuk seluruh kegiatan belajar.",
+          "icon": "edu/150/var(--pColor)",
+          "url": "lms/web/page/home"
+        },
+        {
+          "id": 2,
+          "nama": "Presensi",
+          "isi": "Absensi digital via QR Code atau tautan.\nTanpa install aplikasi.\nRekap otomatis per sesi dan periode.\nUntuk kelas, rapat, pelatihan, dan kegiatan.",
+          "icon": "qrcode/150/var(--pColor)",
+          "url": "presensi/page/home"
+        },
+        {
+          "id": 3,
+          "nama": "Transaksi",
+          "isi": "Kasir digital dan manajemen stok dalam satu produk.\nUMKM kecil pakai keduanya sekaligus.\nKampus dan koperasi bisa pisahkan\nperan kasir dan admin gudang.",
+          "icon": "cart/150/var(--pColor)",
+          "url": "transaksi/page/home"
+        },
+        {
+          "id": 4,
+          "nama": "Keuangan",
+          "isi": "Pembukuan lengkap untuk usaha dan institusi.\nCatat pemasukan dan pengeluaran,\nlihat neraca dan laporan laba rugi.\nLaporan keuangan siap kapan saja.",
+          "icon": "wallet/150/var(--pColor)",
+          "url": "keuangan/page/home"
+        }
+      ]
+    },
+
+    {
+      "section": "stats",
+      "caption": "Dua Segmen — Satu Ekosistem",
+      "content": [
+        {
+          "id": 1,
+          "nama": "Institusi pendidikan",
+          "isi": "Kampus, sekolah, dan lembaga kursus\nyang butuh pembelajaran online,\nabsensi kelas, dan laporan keuangan akademik\ndalam satu ekosistem yang terhubung.",
+          "icon": "edu/150/var(--pColor)",
+          "url": "web/page/profile"
+        },
+        {
+          "id": 2,
+          "nama": "UMKM dan koperasi",
+          "isi": "Kantin, toko, koperasi kampus, dan usaha kecil\nyang butuh kasir digital, stok barang,\ndan pembukuan yang terhubung otomatis —\ntanpa perlu tiga aplikasi berbeda.",
+          "icon": "cart/150/var(--pColor)",
+          "url": "web/page/profile"
+        }
+      ]
+    },
+
+    {
+      "section": "table",
+      "caption": "Produk yang Relevan per Kebutuhan",
+      "content": [
+        {
+          "Kebutuhan":  "Kuliah online dan materi digital",
+          "Produk":     "LMS",
+          "Yang didapat": "Kursus, kuis, nilai, sertifikat, jadwal, daftar peserta"
+        },
+        {
+          "Kebutuhan":  "Absensi kelas dan kegiatan",
+          "Produk":     "Presensi",
+          "Yang didapat": "QR Code, rekap otomatis, laporan kehadiran per periode"
+        },
+        {
+          "Kebutuhan":  "Kasir dan stok toko/kantin",
+          "Produk":     "Transaksi",
+          "Yang didapat": "Kasir digital, stok masuk keluar, laporan penjualan"
+        },
+        {
+          "Kebutuhan":  "Pembukuan dan laporan keuangan",
+          "Produk":     "Keuangan",
+          "Yang didapat": "Neraca, laba rugi, arus kas, laporan per periode"
+        },
+        {
+          "Kebutuhan":  "Kampus lengkap",
+          "Produk":     "LMS + Presensi + Keuangan",
+          "Yang didapat": "Belajar, hadir, dan administrasi keuangan akademik"
+        },
+        {
+          "Kebutuhan":  "Usaha dan koperasi lengkap",
+          "Produk":     "Transaksi + Keuangan",
+          "Yang didapat": "Jual, stok, dan pembukuan terhubung otomatis"
+        }
+      ]
+    },
+
+    {
+      "section": "stats",
+      "caption": "Integrasi Antar Produk",
+      "content": [
+        {
+          "id": 1,
+          "nama": "Presensi → LMS",
+          "isi": "Kehadiran kelas masuk otomatis\nsebagai komponen nilai di LMS.\nTidak ada rekap manual,\ntidak ada data yang diinput dua kali.",
+          "icon": "link/100/var(--pColor)",
+          "url": ""
+        },
+        {
+          "id": 2,
+          "nama": "Transaksi → Keuangan",
+          "isi": "Setiap transaksi penjualan\nlangsung tercatat sebagai pemasukan.\nSetiap pembelian stok\nlangsung tercatat sebagai pengeluaran.",
+          "icon": "link/100/var(--pColor)",
+          "url": ""
+        },
+        {
+          "id": 3,
+          "nama": "Semua → Laporan",
+          "isi": "Data dari semua produk\nbisa ditarik ke laporan keuangan.\nSatu sumber kebenaran\nuntuk seluruh kegiatan institusi.",
+          "icon": "chart/100/var(--pColor)",
+          "url": ""
+        }
+      ]
+    },
+
+    {
+      "section": "btn",
+      "btn": [
+        { "text": "Lihat Produk",   "url": "web/page/docs",    "icon": "layout"   },
+        { "text": "Tentang Piawai", "url": "web/page/profile", "icon": "piawai"   },
+        { "text": "Hubungi Kami",   "url": "web/page/kontak",  "icon": "whatsapp" }
+      ]
+    }
+
+  ]
+}
