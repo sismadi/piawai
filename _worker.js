@@ -148,56 +148,37 @@ ${body}
 </html>`;
 }
 
-async function fetchJson(jsonPath, cacheStorage) {
+async function fetchJson(jsonPath) {
   const url = `${REPO_RAW}/${jsonPath}`;
-  const cacheKey = new Request(url);
-
-  const cached = await cacheStorage.match(cacheKey);
-  if (cached) return cached.json();
-
-  const res = await fetch(url);
-  if (!res.ok) return null;
-
-  const clone = res.clone();
-  const cacheResponse = new Response(clone.body, {
-    headers: {
-      'Content-Type': 'application/json',
-      'Cache-Control': `public, max-age=${CACHE_TTL}`,
-    },
+  const res = await fetch(url, {
+    cf: { cacheTtl: CACHE_TTL, cacheEverything: true },
   });
-  cacheStorage.put(cacheKey, cacheResponse);
-
+  if (!res.ok) return null;
   return res.json();
 }
 
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request, env) {
     const url  = new URL(request.url);
     const path = url.pathname.replace(/\/$/, '') || '/';
     const ua   = request.headers.get('User-Agent') || '';
 
     if (!isCrawler(ua)) {
-      return fetch(request);
+      return env.ASSETS.fetch(request);
     }
 
     const jsonPath = ROUTES[path];
     if (!jsonPath) {
-      return fetch(request);
+      return env.ASSETS.fetch(request);
     }
 
     try {
-      const cache = caches.default;
-      const cacheKey = new Request(`https://piawai.id/__seo_cache__${path}`);
-
-      const cached = await cache.match(cacheKey);
-      if (cached) return cached;
-
-      const data = await fetchJson(jsonPath, cache);
-      if (!data) return fetch(request);
+      const data = await fetchJson(jsonPath);
+      if (!data) return env.ASSETS.fetch(request);
 
       const html = buildHtml(path, data);
 
-      const response = new Response(html, {
+      return new Response(html, {
         headers: {
           'Content-Type': 'text/html;charset=UTF-8',
           'Cache-Control': `public, max-age=${CACHE_TTL}`,
@@ -205,12 +186,8 @@ export default {
         },
       });
 
-      ctx.waitUntil(cache.put(cacheKey, response.clone()));
-
-      return response;
-
     } catch (err) {
-      return fetch(request);
+      return env.ASSETS.fetch(request);
     }
   },
 };
