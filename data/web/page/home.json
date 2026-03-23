@@ -121,14 +121,14 @@
           "id": 1,
           "nama": "Presensi → LMS",
           "isi": "Kehadiran kelas masuk otomatis\nsebagai komponen nilai di LMS.\nTidak ada rekap manual,\ntidak ada data yang diinput dua kali.",
-          "icon": "link/100/var(--pColor)",
+          "icon": "users/100/var(--pColor)",
           "url": ""
         },
         {
           "id": 2,
           "nama": "Transaksi → Keuangan",
           "isi": "Setiap transaksi penjualan\nlangsung tercatat sebagai pemasukan.\nSetiap pembelian stok\nlangsung tercatat sebagai pengeluaran.",
-          "icon": "link/100/var(--pColor)",
+          "icon": "wallet/100/var(--pColor)",
           "url": ""
         },
         {

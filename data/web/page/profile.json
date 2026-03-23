@@ -35,7 +35,7 @@
           "id": 2,
           "nama": "Terhubung, bukan terisolasi",
           "isi": "Presensi tahu jadwal LMS.\nTransaksi penjualan masuk ke Keuangan.\nData tidak diinput dua kali.\nSatu ekosistem yang bergerak bersama.",
-          "icon": "link/150/var(--pColor)",
+          "icon": "wifi/150/var(--pColor)",
           "url": ""
         },
         {

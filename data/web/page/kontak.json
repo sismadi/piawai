@@ -13,8 +13,8 @@
         "icon2": "geo/80/var(--pColor)/0.05",
         "icon3": "piawai/60/var(--pColor)/0.04",
         "cta": [
-          { "text": "WhatsApp Sekarang", "url": "https://wa.me/6287885073237?text=Halo%20Piawai%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda.", "icon": "whatsapp" },
-          { "text": "Kirim Email",       "url": "mailto:wawan@sismadi.com",  "icon": "envelope" },
+          { "text": "WhatsApp Sekarang", "link": "https://wa.me/6287885073237?text=Halo%20Piawai%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda.", "icon": "whatsapp" },
+          { "text": "Kirim Email",       "url": "mailto:wawan@sismadi.com",  "icon": "mail" },
           { "text": "Beranda",           "url": "web/page/home",             "icon": "house"    }
         ]
       }
@@ -35,7 +35,7 @@
           "id": 2,
           "nama": "Email",
           "isi": "wawan@sismadi.com\n\nUntuk pertanyaan teknis,\npermintaan demo, atau diskusi\nkerja sama dan kemitraan.",
-          "icon": "envelope/150/var(--pColor)",
+          "icon": "mail/150/var(--pColor)",
           "url": "mailto:wawan@sismadi.com"
         },
         {
@@ -108,7 +108,7 @@
     {
       "section": "btn",
       "btn": [
-        { "text": "WhatsApp Sekarang", "url": "https://wa.me/6287885073237", "icon": "whatsapp" },
+        { "text": "WhatsApp Sekarang", "link": "https://wa.me/6287885073237", "icon": "whatsapp" },
         { "text": "Lihat Produk",      "url": "web/page/docs",               "icon": "layout"   },
         { "text": "Beranda",           "url": "web/page/home",               "icon": "house"    }
       ]
