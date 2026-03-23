@@ -147,7 +147,7 @@
           "id": 3,
           "nama": "Credly",
           "isi": "Sertifikasi profesional\nyang terverifikasi digital.\nBadge kompetensi teknologi.",
-          "icon": "check/100/var(--pColor)",
+          "icon": "credly/100/var(--pColor)",
           "url": "https://credly.com"
         },
         {
